@@ -38,11 +38,15 @@
 </div>
 
 <script>
-    const el = document.getElementById("random-answer");
-    const choice = Math.random() < 0.5 ? "TAK!" : "NIE!";
-    el.innerText = choice;
-    if (choice === "NIE!") {
-        el.classList.add("red-mode");
+    const answers = ["TAK!", "NIE!"];
+    const randomIndex = Math.floor(Math.random() * answers.length);
+    const display = document.getElementById("random-answer");
+    const result = answers[randomIndex];
+
+    display.innerText = result;
+
+    if (result === "NIE!") {
+        display.classList.add("red-mode");
     }
 </script>
 
