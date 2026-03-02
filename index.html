@@ -20,7 +20,7 @@
 
         <div class="question-box">
             <p class="question-text">Pytanie: Czy byłeś na wyspie?</p>
-            <div class="answer-text">TAK!</div>
+            <div id="random-answer" class="answer-text">TAK!</div>
         </div>
 
         <div class="info">
@@ -37,6 +37,12 @@
     <aside class="side right"></aside>
 </div>
 
-</body>
+<script>
+    // Prosty skrypt losujący odpowiedź po odświeżeniu
+    const answers = ["TAK!", "NIE!"];
+    const randomIndex = Math.floor(Math.random() * answers.length);
+    document.getElementById("random-answer").innerText = answers[randomIndex];
+</script>
 
+</body>
 </html>
