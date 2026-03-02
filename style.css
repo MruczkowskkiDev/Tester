@@ -70,7 +70,7 @@ header {
 
 .answer-text {
     font-size: clamp(60px, 12vw, 150px);
-    color: #00ff55;
+    color: #00ff00;
     font-weight: 900;
     text-shadow: 5px 5px 0px #005500, 0 0 20px #00ff00;
     cursor: default;
@@ -116,4 +116,5 @@ header {
         width: 100%;
     }
 }
+
 
