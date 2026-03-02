@@ -38,10 +38,12 @@
 </div>
 
 <script>
-    // Prosty skrypt losujący odpowiedź po odświeżeniu
-    const answers = ["TAK!", "NIE!"];
-    const randomIndex = Math.floor(Math.random() * answers.length);
-    document.getElementById("random-answer").innerText = answers[randomIndex];
+    const el = document.getElementById("random-answer");
+    const choice = Math.random() < 0.5 ? "TAK!" : "NIE!";
+    el.innerText = choice;
+    if (choice === "NIE!") {
+        el.classList.add("red-mode");
+    }
 </script>
 
 </body>
