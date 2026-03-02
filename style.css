@@ -72,7 +72,7 @@ header {
     font-size: clamp(60px, 12vw, 150px);
     color: #00ff55;
     font-weight: 900;
-    text-shadow: 5px 5px 0px #000;
+    text-shadow: 5px 5px 0px #005500, 0 0 20px #00ff00;
     cursor: default;
     transition: transform 0.3s ease;
     display: inline-block;
@@ -84,7 +84,7 @@ header {
 }
 
 .answer-text:hover {
-    transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1)
 }
 
 .info {
@@ -116,3 +116,4 @@ header {
         width: 100%;
     }
 }
+
